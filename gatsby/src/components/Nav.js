@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Logo from './Logo';
 
 // good to know
+// Functional way to send user via click in code but also add it to the browser history
 function goToSlicers() {
   setTimeout(() => {
     navigate('/sliceMasters', { replace: true }).then((r) => {
@@ -55,6 +56,7 @@ const NavStyles = styled.nav`
     @media (max-width: 800px) {
       font-size: 2rem;
     }
+    // GATSBY way to style specific links for a the "Current Page"
     /* &[aria-current='page'] {
       color: var(--red);
     } */
