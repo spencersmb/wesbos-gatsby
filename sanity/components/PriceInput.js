@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line import/no-unresolved
 import PatchEvent, { set, unset } from 'part:@sanity/form-builder/patch-event';
 
 function createPatchFrom(value) {
@@ -9,6 +10,8 @@ const formateMoney = Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
 }).format;
+
+// Refer to Video 15 for this component
 export default function PriceInput({ inputComponent, type, value, onChange }) {
   return (
     <div>

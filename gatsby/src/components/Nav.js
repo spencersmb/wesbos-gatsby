@@ -7,7 +7,7 @@ import Logo from './Logo';
 // Functional way to send user via click in code but also add it to the browser history
 function goToSlicers() {
   setTimeout(() => {
-    navigate('/sliceMasters', { replace: true }).then((r) => {
+    navigate('/sliceMasters', { replace: true }).then(r => {
       console.log('nav', r);
     });
   }, 2000);
@@ -92,7 +92,7 @@ export default function Nav() {
           <Link to='/'>Hot Now</Link>
         </li>
         <li>
-          <Link to='/pizzas/'>Pizza Menu</Link>
+          <Link to='/pizza/'>Pizza Menu</Link>
         </li>
         <li className='logo-item'>
           <Link to='/'>
